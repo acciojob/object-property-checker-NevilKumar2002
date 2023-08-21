@@ -2,17 +2,16 @@ const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
   //   write your code here
-	for(let i in hasKey)
-		{
-			if(hasKey[key]== sampleObject.key)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+	const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
+    if (sampleObject.hasOwnProperty(key)) {
+        // If it does, return true
+        return true;
+    } else {
+        // If it doesn't, return false
+        return false;
+    }
+}
+
 }
 hasKey(key);
 // Do not change the code below
